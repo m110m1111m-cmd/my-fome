@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ບໍລິການດ້ານເອກະສານຄົບວົງຈອນ - Dimr Service</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome ສໍາລັບ Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- ເຊື່ອມຕໍ່ໄຟລ໌ CSS ທີ່ແຍກອອກມາ -->
+    <link rel="stylesheet" href="dimr.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <i class="fas fa-file-signature"></i> ບໍລິການເອກະສານ Dimr
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">ໜ້າຫຼັກ</a></li>
+                    <li><a href="#services">ບໍລິການ</a></li>
+                    <li><a href="#contact">ຕິດຕໍ່ເຮົາ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>🌟 ບໍລິການເອກະສານຄົບວົງຈອນ 🌟</h1>
+            <p>ຊ່ວຍໃຫ້ທຸກຂັ້ນຕອນການເຮັດເອກະສານເປັນເລື່ອງງ່າຍ ວ່ອງໄວ ແລະ ປອດໄພ</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-main"><i class="fab fa-facebook-messenger"></i> ປຶກສາຟຣີດຽວນີ້</a>
+                <a href="#services" class="btn" style="border: 1px solid white; color: white;">ເບິ່ງບໍລິການ</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">📋 ບໍລິການທີ່ພວກເຮົາຊ່ຽວຊານ</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">ພວກເຮົາພ້ອມດູແລເອກະສານສຳຄັນຂອງທ່ານໃຫ້ຖືກຕ້ອງຕາມລະບຽບການ</p>
+            
+            <div class="service-grid">
+                <div class="service-card" data-aos="zoom-in" onclick="openModal('modal1')">
+                    <div class="icon-box"><i class="fas fa-book-atlas"></i></div>
+                    <h3>ປື້ມຜ່ານແດນ (Border Pass)</h3>
+                    <p>ບໍລິການເຮັດປື້ມຜ່ານແດນສຳລັບເຂດຊາຍແດນ ວ່ອງໄວໃນ 3-5 ມື້.</p>
+                    <span class="price-tag">ລາຄາເລີ່ມຕົ້ນ: ຕາມລະບຽບ</span>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100" onclick="openModal('modal2')">
+                    <div class="icon-box"><i class="fas fa-passport"></i></div>
+                    <h3>ໜັງສືພັດສະປອດ (Passport)</h3>
+                    <p>ຮັບຈອງຄິວ ແລະ ແລ່ນເອກະສານພັດສະປອດສາກົນ ທົ່ວປະເທດ.</p>
+                    <span class="price-tag">ລາຄາເລີ່ມຕົ້ນ: ຕາມລະບຽບ</span>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200" onclick="openModal('modal3')">
+                    <div class="icon-box"><i class="fas fa-id-card"></i></div>
+                    <h3>ບັດປະຈຳໂຕ</h3>
+                    <p>ໃຫ້ຄຳປຶກສາ ແລະ ຊ່ວຍເຫຼືອໃນການເຮັດບັດປະຈຳໂຕໃໝ່ ຫຼື ຕໍ່ບັດ.</p>
+                    <span class="price-tag">ລາຄາເລີ່ມຕົ້ນ: ຕາມລະບຽບ</span>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="300" onclick="openModal('modal4')">
+                    <div class="icon-box"><i class="fas fa-globe"></i></div>
+                    <h3>ວິຊາຕ່າງດາວ (Visa)</h3>
+                    <p>ບໍລິການຂໍ Visa ເຂົ້າ-ອອກ ປະເທດ ສຳລັບຄົນລາວ ແລະ ຄົນຕ່າງປະເທດ.</p>
+                    <span class="price-tag">ລາຄາເລີ່ມຕົ້ນ: ຕາມລະບຽບ</span>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="400" onclick="openModal('modal5')">
+                    <div class="icon-box"><i class="fas fa-file-invoice"></i></div>
+                    <h3>ເອກະສານທາງການອື່ນໆ</h3>
+                    <p>ຮັບແປເອກະສານ, ໃບຢັ້ງຢືນຕ່າງໆ ແລະ ເອກະສານທີ່ປຶກສາທາງກົດໝາຍ.</p>
+                    <span class="price-tag">ລາຄາເລີ່ມຕົ້ນ: ຕາມປະເພດ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+            <h2 style="color: var(--primary-color); margin-bottom: 20px;">ປື້ມຜ່ານແດນ (Border Pass)</h2>
+            <p><strong>ລາຍລະອຽດ:</strong> ໃຊ້ສຳລັບເດີນທາງຂ້າມຊາຍແດນໃນເຂດທີ່ກຳນົດ.</p>
+            <ul style="margin: 20px 0; padding-left: 20px;">
+                <li>ເວລາດຳເນີນການ: 3-5 ວັນທຳການ</li>
+                <li>ເອກະສານທີ່ຕ້ອງກຽມ: ບັດປະຈຳໂຕ, ສຳມະໂນຄົວ, ຮູບຖ່າຍ 3x4</li>
+            </ul>
+            <a href="https://wa.me/8562091486916" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">ສັ່ງເຮັດເລີຍຜ່ານ WhatsApp</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+            <h2 style="color: var(--primary-color); margin-bottom: 20px;">ໜັງສືພັດສະປອດ (Passport)</h2>
+            <p><strong>ລາຍລະອຽດ:</strong> ເອກະສານເດີນທາງສາກົນ ໃຊ້ໄດ້ທົ່ວໂລກ.</p>
+            <ul style="margin: 20px 0; padding-left: 20px;">
+                <li>ເວລາດຳເນີນການ: 7-14 ວັນທຳການ</li>
+                <li>ປະເພດ: ປົກກະຕິ ແລະ ເລັ່ງດ່ວນ</li>
+            </ul>
+            <a href="https://wa.me/8562091486916" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">ສັ່ງເຮັດເລີຍຜ່ານ WhatsApp</a>
+        </div>
+    </div>
+
+            <!-- Modal ສຳລັບບັດປະຈຳໂຕ -->
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <h2>ບັດປະຈຳໂຕ - ລາຍລະອຽດ</h2>
+                    <p><strong>ລາຍລະອຽດເພີ່ມເຕີມ:</strong></p>
+                    <p>ຮັບເຮັດບັດປະຈຳໂຕທຸກປະເພດ ທັງປະເທດແລະສາກົນ ດ້ວຍຄຸນນະພາບສູງ</p>
+                    <p><strong>ເວລາດຳເນີນການ:</strong> 2-3 ວັນ</p>
+                    <p><strong>ລາຄາ:</strong> ຕາມລະບົງ</p>
+                </div>
+            </div>
+
+            <!-- Modal ສຳລັບວິຊາຕ່າງດາວ -->
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                    <h2>ວິຊາຕ່າງດາວ (Visa) - ລາຍລະອຽດ</h2>
+                    <p><strong>ລາຍລະອຽດເພີ່ມເຕີມ:</strong></p>
+                    <p>ຮັບແລ່ນວິຊາ ແລະ ຂໍວິຊາສຳລັບຄົນຕ່າງດາວ ໄປໆ່າງທະ-ເທດແລະສາກົນ ຈາກທົ່ວໂລກ</p>
+                    <p><strong>ເວລາດຳເນີນການ:</strong> 10-15 ວັນ</p>
+                    <p><strong>ລາຄາ:</strong> ຕາມລະບົງ</p>
+                </div>
+            </div>
+
+            <!-- Modal ສຳລັບເອກະສານຕ່າງໆ -->
+            <div id="modal5" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal5')">&times;</span>
+                    <h2>ເອກະສານຕ່າງໆ - ລາຍລະອຽດ</h2>
+                    <p><strong>ລາຍລະອຽດເພີ່ມເຕີມ:</strong></p>
+                    <p>ຮັບເຮັດ ແລະ ໃຫ້ຄຳປຶກສາດ້ານເອກະສານທາງການ ທັງໂຄສະຣ້າຍຫາວ ອື່ນຶ່ງ</p>
+                    <p><strong>ເວລາດຳເນີນການ:</strong> ຂຶ້ນກັບປະເພດເອກະສານ</p>
+                    <p><strong>ລາຄາ:</strong> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2>📞 ຕິດຕໍ່ສອບຖາມຂໍ້ມູນ</h2>
+                    <p style="margin-bottom: 30px;">ພວກເຮົາພ້ອມໃຫ້ຄຳປຶກສາທຸກບັນຫາເລື່ອງເອກະສານ ຕະຫຼອດ 24 ຊົ່ວໂມງ.</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>ເບີໂທລະສັບ:</strong><br>020 91486916
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong><br>contact@dimrservice.com
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>ສະຖານທີ່:</strong><br>ບ້ານນາສ້າງໃຜ່, ນະຄອນຫຼວງວຽງຈັນ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-actions" data-aos="fade-left">
+                    <a href="https://wa.me/8562091486916" target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> ຕິດຕໍ່ຜ່ານ WhatsApp
+                    </a>
+                    <a href="mailto:contact@dimrservice.com" class="btn btn-email">
+                        <i class="fas fa-envelope"></i> ສົ່ງ Email ຫາພວກເຮົາ
+                    </a>
+                    <a href="https://www.facebook.com/share/16yJkcM26K/?mibextid=wwXIfr" target="_blank" class="btn btn-facebook">
+                        <i class="fab fa-facebook-f"></i> ຕິດຕາມຜ່ານ Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="margin-bottom: 20px; font-size: 20px; color: white;">
+                <i class="fab fa-facebook mx-2"></i>
+                <i class="fab fa-whatsapp mx-2"></i>
+                <i class="fas fa-at mx-2"></i>
+            </div>
+            <p>&copy; 2026 Dimr Service - ບໍລິການເອກະສານຄົບວົງຈອນ.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, offset: 100, once: true });
+
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+    </script>
+
+</body>
+</html>
